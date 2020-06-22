@@ -48,21 +48,21 @@ To get installed location: whereis maven
 
 13.	Pipeline: Definition-> Pipeline script form SCM
 
-SCM-> Git
+    SCM-> Git
 
-Repository URL: https://github.com/hossain434/Selenium_Sample_Example  (doesn’t need to provide .git URL)
+    Repository URL: https://github.com/hossain434/Selenium_Sample_Example  (doesn’t need to provide .git URL)
 
-Left the credentials blank since this is public link
+    Left the credentials blank since this is public link
 
-Branch to build: Master
+    Branch to build: Master
 
-Repository browser: Auto
+    Repository browser: Auto
 
-Script path: Jenkinsfile
+    Script path: Jenkinsfile
 
-Create a Jenkinsfile and add in the GitHub project. If you have more than one then name as Jenkinsfile_1, Jenkinsfile_2 etc.
+    Create a Jenkinsfile and add in the GitHub project. If you have more than one then name as Jenkinsfile_1, Jenkinsfile_2 etc.
 
-Example: https://github.com/hossain434/Selenium_Sample_Example/blob/master/Jenkinsfile 
+    Example: https://github.com/hossain434/Selenium_Sample_Example/blob/master/Jenkinsfile 
 
 14.	Build Trigger: Setup schedule.
 
