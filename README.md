@@ -4,31 +4,31 @@
 
 2.	Download chromedriver on CentOS/Any machine: https://www.tomordonez.com/install-chromedriver-linux/
 
-Please note: chromedriver and Chrome browser should be compatible with version unless test will fail for version mismatch.
+    Please note: chromedriver and Chrome browser should be compatible with version unless test will fail for version mismatch.
 
-This is the directory where to download Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/downloads
+    This is the directory where to download Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/downloads
 
-$ wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip
+    $ wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip
 
-$ unzip chromedriver_linux64_2.3.zip
+    $ unzip chromedriver_linux64_2.3.zip
 
-$ sudo cp chromedriver /usr/bin/chromedriver
+    $ sudo cp chromedriver /usr/bin/chromedriver
 
-$ sudo chown root /usr/bin/chromedriver
+    $ sudo chown root /usr/bin/chromedriver
 
-$ sudo chmod +x /usr/bin/chromedriver
+    $ sudo chmod +x /usr/bin/chromedriver
 
-$ sudo chmod 755 /usr/bin/chromedriver
+    $ sudo chmod 755 /usr/bin/chromedriver
 
-Then setup Chromedriver using the right location.
+    Then setup Chromedriver using the right location.
 
-driver = webdriver.Chrome('/usr/bin/chromedriver')
+    driver = webdriver.Chrome('/usr/bin/chromedriver')
 
 3.	Update selenium script with the chromedriver location e.g. System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 
 4.	Install Git on CentOS/Any machine: Follow this: https://linuxize.com/post/how-to-install-git-on-centos-7/
 
-5.	In Jenkins, Install Git plugin then go to manage Jenkins -> Global tool configuration-> Git-> Name: Default, Check ‘Install automatically’ if you don’t have installed in your machine or virtual instance, Path to Git Executable: Git
+5.	In Jenkins, Install Git plugin then go to manage Jenkins -> Global tool configuration-> Git-> Name: Default, Check ‘Install       automatically’ if you don’t have installed in your machine or virtual instance, Path to Git Executable: Git
 
 6.	In Jenkins, go to manage Jenkins -> Global tool configuration-> NodeJS-> Name: node, Check ‘Install automatically’, select the version from dropdown and left the other fields as it is. Jenkins will take care NodeJS installation.
 
